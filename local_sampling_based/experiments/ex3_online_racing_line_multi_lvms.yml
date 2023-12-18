@@ -1,0 +1,50 @@
+---
+# general parameters
+params:
+  track_name: 'lvms_3d_rl_as_ref_smoothed'
+  vehicle_name: 'dallaraAV21'
+  assumed_calc_time: 0.1  # assumed calculation time in seconds for next state assuming perfect tracking of the planned trajectory
+
+# parameters of sampling based planner
+params_sp:
+  relative_generation: True
+  n_samples: 15
+  v_samples: 40
+  num_samples: 30
+  horizon: 3.0  # in seconds
+  safety_distance: 0.2  # in meter
+  gg_abs_margin: 0.8  # in meter/seconds^2
+  friction_check_2d: False
+
+# parameters of racing line planner
+params_rp:
+  mode: 'local'  # 'global' or 'local'
+  optimization_horizon: 500.0  # in meter
+  # parameters only for local mode
+  gg_margin: 0.1
+  safety_distance: 0.5  # in meter
+  # parameters only for global mode
+  offline_raceline_name: 'lvms_3d_rl_as_ref_dallaraAV21_gg_0.1'
+
+# parameters to set initial state 
+# here state on racing line right before the start finish line (values extracted from racing line file)
+params_ini:
+  start_s: 2400.523437
+  start_n: 0.033708
+  start_V: 90.000001
+  start_chi: 0.000268
+  start_ax: 0.000000
+  start_ay: 17.236859
+
+# parameters to set opponents (set speed_opponents or speed_scale_opponents to [0.0] for static obstacles)
+params_opp:
+  sensor_range: 200.0
+  # start positions s along the reference line
+  start_s_opponents: [100, 300, 500, 700, 900, 1100, 1300, 1500, 1700, 1900, 2100, 2300]
+  # lateral movement of opponents
+  n_opponents: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # constant lateral offsets n
+  reference: 'raceline'  # reference of the lateral offsets: 'center' for center line or 'raceline' for racing line
+  # longitudinal speed of opponents
+  speed_mode: 'raceline'  # options: 'constant' for constant speed or 'raceline' for speed of racing line
+  speed_opponents: []  # constant speeds (only for option 'constant')
+  speed_scale_opponents: [0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7]  # scaling of racing line speed (only for option 'raceline')
