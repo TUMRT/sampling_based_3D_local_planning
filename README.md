@@ -1,4 +1,4 @@
-# Sampling Planning
+# Sampling-Based Local Trajectory Planning
 This repository provides an implementation of the sampling-based local planning approach proposed in [[1]](#1). This includes: 
 
 - the (offline) generation of gg-diagrams that depend on the total velocity $v$ and the apparent vertical acceleration $\tilde{g}$ according to [[3]](#3) and [[4]](#4)
