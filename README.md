@@ -98,11 +98,11 @@ If you use the sampling-based local trajectory planning approach, please cite ou
 
 ## References
 <a id="1">[1]</a> 
-L. Ögretmen, M. Rowold, A. Langmann, and B. Lohmann, “Sampling-Based Motion Planning with Online Racing Line Generation for Autonomous Driving on Three-Dimensional Race Tracks” in 2024 IEEE Intelligent Vehicles Symposium (IV). IEEE, 2024, pp. 1-8.
+L. Ögretmen, M. Rowold, A. Langmann, and B. Lohmann, “Sampling-Based Motion Planning with Online Racing Line Generation for Autonomous Driving on Three-Dimensional Race Tracks” in 2024 IEEE Intelligent Vehicles Symposium (IV), Jeju Island, Republic of Korea, 2024, pp. 811-818.
 
 <a id="2">[2]</a> 
 M. Rowold, L. Ögretmen, U. Kasolowsky and B. Lohmann, “Online Time-Optimal Trajectory Planning on
-Three-Dimensional Race Tracks” in 2023 IEEE Intelligent Vehicles Symposium (IV). IEEE, 2023, pp. 1-8.
+Three-Dimensional Race Tracks” in 2023 IEEE Intelligent Vehicles Symposium (IV), Anchorage, AK, USA, 2023, pp. 1-8.
 
 <a id="3">[3]</a> 
 M. Veneri and M. Massaro, “A free-trajectory quasi-steady-state
